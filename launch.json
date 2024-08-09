@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "android",
+            "request": "attach",
+            "name": "Android Attach",
+            "appSrcRoot": "${workspaceRoot}/app/src/main",
+            "adbPort": 5037,
+            "processId": "${command:PickAndroidProcess}"
+        },
+
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "pwa-msedge",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "/Users/user/Desktop/Mohamed frank/job ui /compment/navbar/index.html"
+        },
+        {
+            "name": "Attach to Direct iOS - Experimental",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnativedirect",
+            "request": "attach",
+            "platform": "ios",
+            "useHermesEngine": false,
+            "port": 9221,
+            "isDynamic": true
+        }
+    ]
+}
